@@ -90,7 +90,7 @@
                                         <div class="card mb-3 mb-md-5">
                                             <div class="card-header">
                                                 <strong>
-                                                    Lorem ipsum dolor
+                                                    Category <?= $i ?>
                                                 </strong>
                                             </div>
                                             <div class="card-body">
