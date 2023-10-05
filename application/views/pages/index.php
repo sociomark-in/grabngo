@@ -83,130 +83,35 @@
                                 Discover Our Menu
                             </h2>
                         </div>
-                        <div class="menu__tabnav">
-                            <div class="card mb-3 mb-md-5">
-                                <div class="card-body">
-                                    <ul class="nav nav-tabs justify-content-center gap-2" id="myTab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane py-4 fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                            <div class="row m-0">
-                                                <?php for ($i = 0; $i < 10; $i++) : ?>
-                                                    <div class="col-md-6 mb-3">
-                                                        <div class="menu__item">
-                                                            <div class="row m-0">
-                                                                <div class="col-md col-12">
-                                                                    <div class="">
-                                                                        <strong>
-                                                                            Lorem ipsum dolor
-                                                                        </strong>
-                                                                        <p class="m-0">
-                                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, dolorum!
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-auto col-12">
-                                                                    Lorem, ipsum.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                <?php endfor ?>
+                        <div class="menu__categories">
+                            <div class="row m-0">
+                                <?php for ($i = 1; $i < 10; $i++) : ?>
+                                    <div class="col-xxl-3 col-xl-4 col-md-6 col-6">
+                                        <div class="card mb-3 mb-md-5">
+                                            <div class="card-header">
+                                                <strong>
+                                                    Lorem ipsum dolor
+                                                </strong>
                                             </div>
-                                        </div>
-                                        <div class="tab-pane py-4 fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                            <div class="row m-0">
-                                                <?php for ($i = 0; $i < 10; $i++) : ?>
-                                                    <div class="col-md-6 mb-3">
-                                                        <div class="menu__item">
-                                                            <div class="row m-0">
-                                                                <div class="col-md col-12">
-                                                                    <div class="">
-                                                                        <strong>
-                                                                            Lorem ipsum dolor
-                                                                        </strong>
-                                                                        <p class="m-0">
-                                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, dolorum!
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-auto col-12">
-                                                                    Lorem, ipsum.
-                                                                </div>
-                                                            </div>
+                                            <div class="card-body">
+                                                <div class="row m-0">
+                                                    <div class="col-12 mb-3">
+                                                        <div class="">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, nobis!
                                                         </div>
                                                     </div>
-                                                <?php endfor ?>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane py-4 fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                                            <div class="row m-0">
-                                                <?php for ($i = 0; $i < 10; $i++) : ?>
-                                                    <div class="col-md-6 mb-3">
-                                                        <div class="menu__item">
-                                                            <div class="row m-0">
-                                                                <div class="col-md col-12">
-                                                                    <div class="">
-                                                                        <strong>
-                                                                            Lorem ipsum dolor
-                                                                        </strong>
-                                                                        <p class="m-0">
-                                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, dolorum!
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-auto col-12">
-                                                                    Lorem, ipsum.
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <div class="col-12">
+                                                        <a href="<?= base_url('menu#menuCategory' . $i) ?>" class="btn btn-sm btn-ochre">Lorem, ipsum.</a>
                                                     </div>
-                                                <?php endfor ?>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane py-4 fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-                                            <div class="row m-0">
-                                                <?php for ($i = 0; $i < 10; $i++) : ?>
-                                                    <div class="col-md-6 mb-3">
-                                                        <div class="menu__item">
-                                                            <div class="row m-0">
-                                                                <div class="col-md col-12">
-                                                                    <div class="">
-                                                                        <strong>
-                                                                            Lorem ipsum dolor
-                                                                        </strong>
-                                                                        <p class="m-0">
-                                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, dolorum!
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-auto col-12">
-                                                                    Lorem, ipsum.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                <?php endfor ?>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                <?php endfor ?>
                             </div>
-                            <div class="text-center">
-                                <a href="<?= base_url("menu") ?>" target="" class="btn btn_icon-left btn-primary"><i class="fa-regular fa-eye icon"></i>View&nbsp;Full&nbsp;Menu</a>
-                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="<?= base_url("menu") ?>" target="" class="btn btn_icon-left btn-primary"><i class="fa-regular fa-eye icon"></i>View&nbsp;Full&nbsp;Menu</a>
                         </div>
                     </div>
                 </div>

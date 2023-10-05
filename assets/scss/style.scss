@@ -2,6 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/*
+THEME
+*/
 $color-red: #ad2b33;
 $color-orange: #d04328;
 $color-ochre: #cc8830;
@@ -13,8 +16,10 @@ $color-white: #f9f6f5;
 $colors: (
 	"primary": $color-orange,
 	"foggy": $color-violet-gray,
-    "ochre": $color-ochre
+	"ochre": $color-ochre,
 );
+
+/* RESET BOOTSTRAP */
 
 html {
 }
@@ -24,8 +29,8 @@ body {
 	font-family: "Rubik", sans-serif;
 }
 
-main{
-    overflow: hidden;
+main {
+	overflow: hidden;
 }
 
 h1,
@@ -63,6 +68,9 @@ a {
 .btn {
 	padding: 0.5rem 1rem;
 	border-radius: 0;
+	&.btn-sm{
+		padding: 0.25rem 0.5rem;
+	}
 	&.btn_icon {
 		&-right {
 			@extend .icon;
@@ -102,21 +110,21 @@ nav.navbar {
 	}
 	.navbar-nav {
 		color: $color-white !important;
-        .nav-link:hover{
-            color: $color-white !important;
-        }
+		.nav-link:hover {
+			color: $color-white !important;
+		}
 	}
 	.navbar-brand {
 		color: $color-white;
 	}
 	&.light {
 		background-color: rgba($color: $color-white, $alpha: 0.5);
-        backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
 		.navbar-nav {
 			color: $color-dark !important;
-            .nav-link:hover{
-                color: $color-dark !important;
-            }
+			.nav-link:hover {
+				color: $color-dark !important;
+			}
 		}
 		.navbar-brand {
 			color: $color-dark;
@@ -126,7 +134,7 @@ nav.navbar {
 .navbar-nav {
 	.nav-link {
 		&.active {
-            color: inherit;
+			color: inherit;
 			border-bottom: 3px solid $color-orange;
 		}
 	}
@@ -140,12 +148,30 @@ footer {
 		}
 	}
 }
+/* THEME CSS */
 
+.gallery-masonry {
+	width: 100%;
+	columns: 4;
+	img {
+		width: 100%;
+		object-fit: contain;
+		border-radius: 15px;
+		margin: 1rem;
+	}
+
+	figure {
+		margin: 0;
+		display: inline-block;
+		margin-bottom: 0px;
+		width: 100%;
+	}
+}
 .section-title {
-    h2 {
+	h2 {
 		font-size: calc(max(3vw, 2.6rem));
 	}
-    p {
+	p {
 		font-size: 1.2rem;
 		&.title-heading {
 			font-size: 2rem;
@@ -153,14 +179,14 @@ footer {
 	}
 }
 
-.page-title{
-    h1 {
+.page-title {
+	h1 {
 		font-size: calc(max(5.5vw, 4rem));
 	}
-    h2 {
+	h2 {
 		font-size: calc(max(5vw, 3.5rem));
 	}
-    p {
+	p {
 		font-size: 1.2rem;
 		&.title-heading {
 			font-size: 1.8rem;

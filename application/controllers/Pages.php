@@ -27,4 +27,14 @@ class Pages extends CI_Controller {
 	{
 		$this->load->view('pages/contact');
 	}
+	
+	public function menu()
+	{
+		$this->load->view('pages/menu');
+	}
+
+	public function gallery()
+	{
+		$this->load->view('pages/gallery');
+	}
 }
