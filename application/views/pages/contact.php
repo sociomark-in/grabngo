@@ -43,14 +43,14 @@
                                 <p>
                                     22 Alnahas Building, 2 AlBahr St, Tanta Al-Gharbia Governorate, Egypt
                                 </p>
-                                <a href=""><strong>Get Directions</strong></a>
+                                <a href="" class="btn btn-sm btn-foggy btn_icon-left"><i class="fa-solid fa-location-dot icon"></i>Get&nbsp;Directions</a>
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <h5>Opening Hours</h5>
                                 <ul class="list-unstyled">
                                     <li>Mon - Fri: 10 AM - 11 PM</li>
                                 </ul>
-                                <a href=""><strong>Call Us</strong></a>
+                                <a href="" class="btn btn-sm btn-foggy btn_icon-left"><i class="fa-solid fa-phone icon"></i>Call&nbsp;Us</a>
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <h5>Our Email</h5>
@@ -60,7 +60,7 @@
                                 <p>
                                     Phone: <a href="">02 0101236547</a>
                                 </p>
-                                <a href=""><strong>Send Message</strong></a>
+                                <a href="" class="btn btn-sm btn-foggy btn_icon-left"><i class="fa-solid fa-envelope icon"></i>Send&nbsp;Message</a>
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <h5>Follow Us</h5>
@@ -106,7 +106,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary btn_icon-left"><i class="fa-solid fa-envelope icon"></i>Submit</button>
                                 </div>
                             </div>
                         </form>

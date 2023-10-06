@@ -1,0 +1,52 @@
+[
+	{
+		"name": "Soup & Salads",
+		"menu": [
+			{
+				"name": "Fish and Fennel Chowder",
+				"description": "creamy fennel broth<br>Served with house focaccia and gremolata",
+				"price": [
+					{
+						"measure": "cup",
+                        "amount" : 9
+					},
+					{
+						"measure": "bowl",
+                        "amount" : 14
+					}
+				]
+			},
+			{
+				"name": "Harvest Grain Salad"
+			},
+			{
+				"name": "Kale Carrot Ginger Salad"
+			}
+		],
+		"add_ons": {
+			"for": ["Harvest Grain Salad", "Kale Carrot Ginger Salad"],
+			"content": [
+				{
+					"name": "Marinated Tofu",
+					"price": 5
+				},
+				{
+					"name": "Roasted Chicken Breast",
+					"price": 6
+				},
+				{
+					"name": "Smoked Tiger Prawns",
+					"price": 8
+				},
+				{
+					"name": "Wild Sockeye Salmon",
+					"price": 10
+				}
+			]
+		}
+	},
+	{
+		"name": "Shareables",
+		"menu": [{}]
+	}
+]

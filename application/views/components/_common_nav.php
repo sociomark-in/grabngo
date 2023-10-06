@@ -9,11 +9,21 @@
                 <li class="nav-item">
                     <?= put_link("Home", "") ?>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <?= put_link("About", "about-us") ?>
-                </li>
-                <li class="nav-item">
-                    <?= put_link("Menu", "menu") ?>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="<?= base_url("menu") ?>">Food Menu</a></li>
+                        <li><a class="dropdown-item" href="<?= base_url("menu") ?>">Drinks Menu</a></li>
+                        <!-- <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <?= put_link("Gallery", "gallery") ?>

@@ -85,7 +85,7 @@
                         </div>
                         <div class="menu__categories">
                             <div class="row m-0">
-                                <?php for ($i = 1; $i < 10; $i++) : ?>
+                                <?php for ($i = 1; $i <= 7; $i++) : ?>
                                     <div class="col-xxl-3 col-xl-4 col-md-6 col-6">
                                         <div class="card mb-3 mb-md-5">
                                             <div class="card-header">
