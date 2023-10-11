@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pages extends CI_Controller {
+class Pages extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -22,19 +23,31 @@ class Pages extends CI_Controller {
 	{
 		$this->load->view('pages/index');
 	}
-	
+
 	public function contact()
 	{
 		$this->load->view('pages/contact');
 	}
-	
-	public function menu()
+
+	public function menu($cat)
 	{
-		$this->load->view('pages/menu');
+		switch ($cat) {
+			case 'drinks':
+				# code...
+				$this->load->view('pages/menu');
+				break;
+
+			default:
+				# code...
+				$this->load->view('pages/menu');
+				break;
+		}
 	}
 
 	public function gallery()
 	{
-		$this->load->view('pages/gallery');
+		$data['gallery']['gallery'] = directory_map(FCPATH. "assets/media/images/gallery");
+		$data['gallery']['thumbnails'] = directory_map(FCPATH. "assets/media/images/gallery/thumbnails");
+		$this->load->view('pages/gallery', $data);
 	}
 }

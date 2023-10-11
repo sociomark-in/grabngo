@@ -86,7 +86,7 @@
                         <div class="menu__categories">
                             <div class="row m-0">
                                 <?php for ($i = 1; $i <= 7; $i++) : ?>
-                                    <div class="col-xxl-3 col-xl-4 col-md-6 col-6">
+                                    <div class="col-xxl-3 col-xl-4 col-md-6 col-sm-6 col-12">
                                         <div class="card mb-3 mb-md-5">
                                             <div class="card-header">
                                                 <strong>
@@ -110,8 +110,13 @@
                                 <?php endfor ?>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <a href="<?= base_url("menu") ?>" target="" class="btn btn_icon-left btn-primary"><i class="fa-regular fa-eye icon"></i>View&nbsp;Full&nbsp;Menu</a>
+                        <div class="row m-0 justify-content-center">
+                            <div class="col-md-auto col-12 mb-3">
+                                <a href="<?= base_url("food-menu") ?>" target="" class="btn btn_icon-left btn-primary"><i class="fa-regular fa-eye icon"></i>View&nbsp;Food&nbsp;Menu</a>
+                            </div>
+                            <div class="col-md-auto col-12">
+                                <a href="<?= base_url("drinks-menu") ?>" target="" class="btn btn_icon-left btn-primary"><i class="fa-regular fa-eye icon"></i>View&nbsp;Drinks&nbsp;Menu</a>
+                            </div>
                         </div>
                     </div>
                 </div>

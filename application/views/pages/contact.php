@@ -116,7 +116,8 @@
         </section>
         <section class="map__fulw pt-0">
             <div class="container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.1520693014118!2d73.00094767502712!3d19.0570504525676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3b0d769ff69%3A0xf839749e6fda79fc!2sSociomark!5e0!3m2!1sen!2sin!4v1696416266194!5m2!1sen!2sin" height="400" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.1520693014118!2d73.00094767502712!3d19.0570504525676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3b0d769ff69%3A0xf839749e6fda79fc!2sSociomark!5e0!3m2!1sen!2sin!4v1696416266194!5m2!1sen!2sin" height="400" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.5738602148335!2d-124.8098472542803!3d49.25897840835823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5488f726b9b5a7d1%3A0x2091df51be3086cd!2sIsland%20Tropics%20Tanning%20Studio!5e1!3m2!1sen!2sin!4v1696483372303!5m2!1sen!2sin" height="400" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>

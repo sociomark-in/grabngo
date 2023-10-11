@@ -1,6 +1,9 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg p-0">
     <div class="container">
-        <a class="navbar-brand" href="<?= base_url() ?>"><span class="d-none d-md-inline"><?= APP_NAME ?></span></a>
+        <a class="navbar-brand" href="<?= base_url() ?>">
+            <img src="<?= base_url("assets/media/images/") ?>logo_white.svg" height="60" alt="" class="">
+            <!-- <span class="d-none d-md-inline"><?= APP_NAME ?></span> -->
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -17,8 +20,8 @@
                         Menu
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="<?= base_url("menu") ?>">Food Menu</a></li>
-                        <li><a class="dropdown-item" href="<?= base_url("menu") ?>">Drinks Menu</a></li>
+                        <li><a class="dropdown-item" href="<?= base_url("food-menu") ?>">Food Menu</a></li>
+                        <li><a class="dropdown-item" href="<?= base_url("drinks-menu") ?>">Drinks Menu</a></li>
                         <!-- <li>
                             <hr class="dropdown-divider">
                         </li>

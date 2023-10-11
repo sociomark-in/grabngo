@@ -31,9 +31,9 @@
         <section>
             <div class="container">
                 <div class="gallery-masonry">
-                    <?php for ($i = 1; $i <= 16; $i++) : ?>
+                    <?php for ($i = 1; $i < count($gallery['thumbnails']); $i++) : ?>
                         <figure>
-                            <img class="w-100" src="<?= base_url() ?>assets/media/images/gallery/<?= $i ?>.jpg" alt="">
+                            <img class="w-100" src="<?= base_url('assets/media/images/gallery/thumbnails/') . $gallery['thumbnails'][$i]?>" alt="Gallery Image <?=$i ?>" loading="lazy">
                             <figcaption></figcaption>
                         </figure>
                     <?php endfor ?>
