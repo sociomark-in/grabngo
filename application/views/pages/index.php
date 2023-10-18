@@ -24,7 +24,7 @@
                                 </p>
                             </div>
                             <div class="text-content" data-aos="fade-up" data-aos-delay="300">
-                                <a href="" class="btn btn-primary btn_icon-right btn-lg">Discover&nbsp;Our&nbsp;Menu<i class="fa-solid fa-arrow-right icon"></i></a>
+                                <a href="<?= base_url() ?>" class="btn btn-primary btn_icon-right btn-lg">Discover&nbsp;Our&nbsp;Menu<i class="fa-solid fa-arrow-right icon"></i></a>
                             </div>
                         </div>
                     </div>
