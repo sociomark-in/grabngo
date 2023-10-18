@@ -51,8 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'Dashboard';
 
-$route['login'] = 'pages/login';
-$route['logout'] = 'auth/logout';
+
 
 $route['api-auth-login'] = 'auth/login';
 $route['api-auth-register'] = 'auth/register';
@@ -65,12 +64,28 @@ $route['api-category/new'] = 'MenuController/category_add';
 $route['api-category/(:any)/delete'] = 'MenuController/category_delete/$1';
 $route['api-category/(:any)/edit'] = 'MenuController/category_edit/$1';
 
+/*
+$route['api/menu-type/new']['put'] = 'MenuTypeResourceController/insert';
+$route['api/menu-type/(:any)']['delete'] = 'MenuTypeResourceController/delete/$1';
+$route['api/menu-type/(:any)']['edit'] = 'MenuTypeResourceController/edit/$1';
+
+$route['api/menu-item/new']['put'] = 'MenuItemResourceController/insert';
+$route['api/menu-item/(:any)']['delete'] = 'MenuItemResourceController/delete/$1';
+$route['api/menu-item/(:any)']['edit'] = 'MenuItemResourceController/edit/$1';
+
+$route['api/category/new']['put'] = 'MenuCategoryResourceController/insert';
+$route['api/category/(:any)']['delete'] = 'MenuCategoryResourceController/delete/$1';
+$route['api/category/(:any)']['patch'] = 'MenuCategoryResourceController/edit/$1';
+*/
+$route['login'] = 'pages/login';
+$route['logout'] = 'auth/logout';
+
 $route['register'] = 'dashboard/register';
 
 $route[''] = 'dashboard/index';
-$route['menu'] = 'dashboard/menu_master';
-$route['menu/categories'] = 'dashboard/categories_all';
-$route['menu/category/(:any)/menu-items'] = 'dashboard/menu_items/$1';
+$route['(:any)/menu'] = 'dashboard/menu_master/$1';
+$route['(:any)/menu/categories'] = 'dashboard/categories_all/$1';
+$route['(:any)/menu/category/(:any)/menu-items'] = 'dashboard/menu_items/$1/$2';
 
 
 $route['404_override'] = '';

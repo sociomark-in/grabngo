@@ -28,6 +28,9 @@ class Dashboard extends CI_Controller
 	public function index()
 	{
 		if (isset($_SESSION['user'])) {
+			$this->load->model('menu/MenuTypeModel', 'MenuType');
+			$menu = json_decode($this->MenuType->show(), true, 4);
+
 			$id = $_SESSION['user']['id'];
 			$user = (array)$this->User->get($id);
 			$this->session->set_userdata(['user' => $user]);
@@ -35,7 +38,8 @@ class Dashboard extends CI_Controller
 			$data = [
 				'page' => [
 					'title' => "Dashboard" . " • " . APP_NAME
-				]
+				],
+				'menu' => $menu
 			];
 			$data['user'] = $user;
 			$this->session->set_userdata(['user' => $user]);
@@ -62,14 +66,14 @@ class Dashboard extends CI_Controller
 	public function menu_master()
 	{
 		if (isset($_SESSION['user'])) {
-			$this->load->model("MenuItemModel", "Menu");
+			$this->load->model("menu/MenuItemModel", "MenuItem");
 			$data = [
 				'page' => [
 					'title' => "Menu" . " • " . APP_NAME
 				],
-				'menu' => $this->Menu->all_master(),
+				'menu' => $this->MenuItem->show_master(),
 			];
-			$this->load->view('dashboard/catelogue/menus', $data);
+			$this->load->view('dashboard/catalogue/menus', $data);
 		} else {
 			redirect('/login');
 		}
@@ -87,7 +91,7 @@ class Dashboard extends CI_Controller
 				'items' => $this->Menu->items_by_($cat_id),
 				'category_id' => $cat_id
 			];
-			$this->load->view('dashboard/catelogue/menu_items', $data);
+			$this->load->view('dashboard/catalogue/menu_items', $data);
 		} else {
 			redirect('/login');
 		}

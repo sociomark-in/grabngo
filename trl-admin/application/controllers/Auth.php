@@ -32,7 +32,7 @@ class Auth extends CI_Controller
 		if (count($user)== 0) {
 		} else {
 			$_SESSION['user'] = $user;
-			redirect("/trl-admin");
+			redirect("/");
 		}
 	}
 

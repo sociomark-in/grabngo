@@ -22,9 +22,50 @@ class MenuController extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model("MenuItemModel", "MenuItem");
+		$this->load->model("menu/MenuItemModel", "MenuItem");
 	}
 
+
+	public function index()
+	{
+		echo "<pre>";
+		print_r($this->MenuItem->show_master());
+
+		$curl = curl_init();
+
+		curl_setopt_array($curl, [
+			CURLOPT_URL => "https://wipple-sms-verify-otp.p.rapidapi.com/send",
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_ENCODING => "",
+			CURLOPT_MAXREDIRS => 10,
+			CURLOPT_TIMEOUT => 30,
+			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+			CURLOPT_CUSTOMREQUEST => "POST",
+			CURLOPT_POSTFIELDS => json_encode([
+				'app_name' => 'exampleapp',
+				'code_length' => 6,
+				'code_type' => 'number',
+				'expiration_second' => 86000,
+				'phone_number' => '918689862375'
+			]),
+			CURLOPT_HTTPHEADER => [
+				"X-RapidAPI-Host: wipple-sms-verify-otp.p.rapidapi.com",
+				"X-RapidAPI-Key: a3d890dde4msh3a9685690a50bf5p138db1jsne20aefa1936c",
+				"content-type: application/json"
+			],
+		]);
+
+		$response = curl_exec($curl);
+		$err = curl_error($curl);
+
+		curl_close($curl);
+
+		if ($err) {
+			echo "cURL Error #:" . $err;
+		} else {
+			echo $response;
+		}
+	}
 
 	public function do_upload()
 	{
@@ -48,12 +89,11 @@ class MenuController extends CI_Controller
 		}
 	}
 
+	/* 
 	public function menu_item_add()
 	{
 		$data = $this->input->post();
 		$this->do_upload();
-		// print_r($data);
-		die;
 		$purifiedArray = $this->MenuItem->map_fields_with_formdata(['item_title', 'item_price', 'item_description', 'cat_id'], $data['item']);
 		$this->MenuItem->new('trl_menu-items', $purifiedArray);
 		$this->session->set_flashdata('success', "Added new item '" . $purifiedArray['item_title'] . "' Successfully.");
@@ -96,5 +136,6 @@ class MenuController extends CI_Controller
 		$this->MenuItem->update('trl_menu-categories', $purifiedArray, array('id' => $id));
 		$this->session->set_flashdata('success', " Successfully Updated '" . $purifiedArray['cat_title'] . "'!");
 		redirect($_SERVER['HTTP_REFERER']);
-	}
+	} 
+	*/
 }

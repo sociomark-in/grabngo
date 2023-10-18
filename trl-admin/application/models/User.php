@@ -15,7 +15,7 @@ class User extends CI_Model
     public function authorize(array $request){
         $result = $this->db->query("SELECT * FROM `trl_users` WHERE `username` = '" . $request['username'] . "'")->result()[0];
         if($result->username == 'admin'){
-            if($request['password'] == $result->password){
+            if(password_verify($request['password'], $result->password)){
                 return (array)$result;
             }
         }else{
