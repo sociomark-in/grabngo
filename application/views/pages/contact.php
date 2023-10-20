@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <?php $this->load->view('components/_head') ?>
     <?php $this->load->view('components/_common_css') ?>
 </head>
-
 <body>
     <header>
         <?php $this->load->view('components/_common_nav') ?>
@@ -126,5 +124,4 @@
     </footer>
     <?php $this->load->view('components/_common_js') ?>
 </body>
-
 </html>

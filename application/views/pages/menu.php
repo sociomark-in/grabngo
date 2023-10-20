@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <?php $this->load->view('components/_head') ?>
     <?php $this->load->view('components/_common_css') ?>
 </head>
-
 <body>
     <header>
         <?php $this->load->view('components/_common_nav') ?>
@@ -166,7 +164,6 @@
                                                                         creamy fennel broth<br>
                                                                         Served with house focaccia and gremolata
                                                                     </small>
-
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1122,5 +1119,4 @@
     </footer>
     <?php $this->load->view('components/_common_js') ?>
 </body>
-
 </html>
