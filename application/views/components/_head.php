@@ -7,8 +7,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="<?=base_url("/assets/media/favicons/") ?>favicon-16x16.png">
 <link rel="manifest" href="<?=base_url("/assets/media/favicons/") ?>site.webmanifest">
 
-
 <meta name="title" content="<?= APP_NAME ?>">
 <meta name="description" content="<?= APP_NAME ?>">
-
 <script src="<?= base_url("third-party/") ?>jquery3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
