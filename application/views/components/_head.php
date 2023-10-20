@@ -11,4 +11,4 @@
 <meta name="title" content="<?= APP_NAME ?>">
 <meta name="description" content="<?= APP_NAME ?>">
 
-<script async="true" src="<?= base_url("third-party/") ?>jquery3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="<?= base_url("third-party/") ?>jquery3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
