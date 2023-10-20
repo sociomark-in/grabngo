@@ -48,10 +48,13 @@
         </div>
     </div>
 </nav>
+
+
 <script>
     $(window).on("scroll", function() {
         var navbar = $('nav.navbar'),
             scroll = $(window).scrollTop();
+
         if (scroll >= 190) {
             navbar.addClass('light');
         } else {
