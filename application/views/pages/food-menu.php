@@ -858,6 +858,7 @@
 				</div>
 			</section>
 		</article>
+<!--
 		<article id="menuCategory4">
 			<section class="banner-lg">
 				<div class="banner-content">
@@ -1377,6 +1378,7 @@
 				</div>
 			</section>
 		</article>
+-->
 	</main>
 	<footer>
 		<?php $this->load->view('components/_common_footer') ?>
