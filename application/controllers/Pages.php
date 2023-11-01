@@ -34,12 +34,13 @@ class Pages extends CI_Controller
 		switch ($cat) {
 			case 'drinks':
 				# code...
-				$this->load->view('pages/menu');
+				// $this->load->view('pages/drinks-menu');
+				$this->load->view('pages/food-menu');
 				break;
 
 			default:
 				# code...
-				$this->load->view('pages/menu');
+				$this->load->view('pages/food-menu');
 				break;
 		}
 	}

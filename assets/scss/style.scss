@@ -14,11 +14,14 @@ $color-orange: #d04328;
 $color-ochre: #cc8830;
 $color-o-green: #61654c;
 $color-violet-gray: #908697;
-$color-dark: #251b21;
+$color-dark: #0e1317;
 $color-white: #f9f6f5;
 
+$color-smokey-01: #0e1317;
+// $color-smokey-02: "";
+
 $colors: (
-	"primary": $color-orange,
+	"primary": $color-ochre,
 	"foggy": $color-violet-gray,
 	"ochre": $color-ochre,
 );
@@ -28,8 +31,8 @@ $colors: (
 html {
 }
 body {
-	background-color: $color-white;
-	color: $color-dark;
+	background-color: $color-smokey-01;
+	color: $color-white;
 	font-family: "Rubik", Arial, Helvetica, sans-serif;
 }
 
@@ -155,6 +158,8 @@ nav.navbar {
 
 .card {
 	border: none;
+	background-color: rgba($color-white, $alpha: 0.05);
+	color: $color-white;
 	.card-header {
 		border-bottom: 0;
 	}

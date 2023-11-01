@@ -84,9 +84,8 @@ $route['register'] = 'dashboard/register';
 
 $route[''] = 'dashboard/index';
 $route['(:any)/menu'] = 'dashboard/menu_master/$1';
-$route['(:any)/menu/categories'] = 'dashboard/categories_all/$1';
+$route['(:any)/menu/(:any)/categories'] = 'dashboard/categories_all/$1';
 $route['(:any)/menu/category/(:any)/menu-items'] = 'dashboard/menu_items/$1/$2';
-
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

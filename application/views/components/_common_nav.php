@@ -21,7 +21,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="<?= base_url("food-menu") ?>">Food Menu</a></li>
-                        <li><a class="dropdown-item" href="<?= base_url("drinks-menu") ?>">Drinks Menu</a></li>
+                        <li class="d-none"><a class="dropdown-item" href="<?= base_url("drinks-menu") ?>">Drinks Menu</a></li>
                         <!-- <li>
                             <hr class="dropdown-divider">
                         </li>

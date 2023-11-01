@@ -30,42 +30,9 @@ class MenuController extends CI_Controller
 	{
 		echo "<pre>";
 		print_r($this->MenuItem->show_master());
-
-		$curl = curl_init();
-
-		curl_setopt_array($curl, [
-			CURLOPT_URL => "https://wipple-sms-verify-otp.p.rapidapi.com/send",
-			CURLOPT_RETURNTRANSFER => true,
-			CURLOPT_ENCODING => "",
-			CURLOPT_MAXREDIRS => 10,
-			CURLOPT_TIMEOUT => 30,
-			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-			CURLOPT_CUSTOMREQUEST => "POST",
-			CURLOPT_POSTFIELDS => json_encode([
-				'app_name' => 'exampleapp',
-				'code_length' => 6,
-				'code_type' => 'number',
-				'expiration_second' => 86000,
-				'phone_number' => '918689862375'
-			]),
-			CURLOPT_HTTPHEADER => [
-				"X-RapidAPI-Host: wipple-sms-verify-otp.p.rapidapi.com",
-				"X-RapidAPI-Key: a3d890dde4msh3a9685690a50bf5p138db1jsne20aefa1936c",
-				"content-type: application/json"
-			],
-		]);
-
-		$response = curl_exec($curl);
-		$err = curl_error($curl);
-
-		curl_close($curl);
-
-		if ($err) {
-			echo "cURL Error #:" . $err;
-		} else {
-			echo $response;
-		}
 	}
+
+	public function category_add()
 
 	public function do_upload()
 	{
