@@ -46,7 +46,7 @@
                             <div class="col-lg-6 mb-3">
                                 <h5>Opening Hours</h5>
                                 <ul class="list-unstyled">
-                                    <li>Mon - Fri: 10 AM - 11 PM</li>
+                                    <li>Everyday: 11:30 AM - 08:00 PM</li>
                                 </ul>
                                 <a href="" class="btn btn-sm btn-foggy btn_icon-left"><i class="fa-solid fa-phone icon"></i>Call&nbsp;Us</a>
                             </div>
@@ -56,7 +56,7 @@
                                     Main Email: <a href="">Babette@7oroof.com</a>
                                 </p>
                                 <p>
-                                    Phone: <a href="">02 0101236547</a>
+                                    Phone: <a href="tel:250-720-0900">250-720-0900</a>
                                 </p>
                                 <a href="" class="btn btn-sm btn-foggy btn_icon-left"><i class="fa-solid fa-envelope icon"></i>Send&nbsp;Message</a>
                             </div>

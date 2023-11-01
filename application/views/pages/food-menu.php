@@ -858,7 +858,6 @@
 				</div>
 			</section>
 		</article>
-<!--
 		<article id="menuCategory4">
 			<section class="banner-lg">
 				<div class="banner-content">
@@ -866,7 +865,7 @@
 						<div class="col-md-6 col-12">
 							<div class="text-center text-white">
 								<div class="page-title mb-5">
-									<h2 class="mb-3" data-aos="fade-up">Soup & Salads</h2>
+									<h2 class="mb-3" data-aos="fade-up">Main Course</h2>
 									<p data-aos="fade-up" data-aos-delay="300" class="title-heading heading-font m-0">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 								</div>
 							</div>
@@ -888,18 +887,18 @@
 														<div class="col-md col-12">
 															<div class="">
 																<strong>
-																	Harvest Grain Salad
+																	Smoked Brisket
 																</strong>
 																<p class="m-0">
 																	<small>
-																		quinoa, caramelized carrots, dried cranberries, pepita seeds, fresh herbs, feta, pickled root veg slaw, maple dijon vinaigrette
+																		yorkshire, house gravy, roasted potatoes, braised vegetables
 																	</small>
 																</p>
 															</div>
 														</div>
 														<div class="col-md-auto col-12">
 															<h5>
-																<span class="text-ochre">&dollar;12</span>
+																<span class="text-ochre">&dollar;34</span>
 															</h5>
 														</div>
 													</div>
@@ -911,18 +910,18 @@
 														<div class="col-md col-12">
 															<div class="">
 																<strong>
-																	Harvest Grain Salad
+																	Ribs
 																</strong>
 																<p class="m-0">
 																	<small>
-																		quinoa, caramelized carrots, dried cranberries, pepita seeds, fresh herbs, feta, pickled root veg slaw, maple dijon vinaigrette
+																		house bbq glaze, roasted potatoes, braised vegetables
 																	</small>
 																</p>
 															</div>
 														</div>
 														<div class="col-md-auto col-12">
 															<h5>
-																<span class="text-ochre">&dollar;12</span>
+																<span class="text-ochre">&dollar;28</span>
 															</h5>
 														</div>
 													</div>
@@ -934,87 +933,18 @@
 														<div class="col-md col-12">
 															<div class="">
 																<strong>
-																	Harvest Grain Salad
+																	Chicken Oscar
 																</strong>
 																<p class="m-0">
 																	<small>
-																		quinoa, caramelized carrots, dried cranberries, pepita seeds, fresh herbs, feta, pickled root veg slaw, maple dijon vinaigrette
+																		roasted chicken breast, tiger prawns, tarragon bearnaise, roasted potatoes, braised vegetables
 																	</small>
 																</p>
 															</div>
 														</div>
 														<div class="col-md-auto col-12">
 															<h5>
-																<span class="text-ochre">&dollar;12</span>
-															</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 mb-3">
-												<div class="menu__item">
-													<div class="row m-0">
-														<div class="col-md col-12">
-															<div class="">
-																<strong>
-																	Harvest Grain Salad
-																</strong>
-																<p class="m-0">
-																	<small>
-																		quinoa, caramelized carrots, dried cranberries, pepita seeds, fresh herbs, feta, pickled root veg slaw, maple dijon vinaigrette
-																	</small>
-																</p>
-															</div>
-														</div>
-														<div class="col-md-auto col-12">
-															<h5>
-																<span class="text-ochre">&dollar;12</span>
-															</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 mb-3">
-												<div class="menu__item">
-													<div class="row m-0">
-														<div class="col-md col-12">
-															<div class="">
-																<strong>
-																	Harvest Grain Salad
-																</strong>
-																<p class="m-0">
-																	<small>
-																		quinoa, caramelized carrots, dried cranberries, pepita seeds, fresh herbs, feta, pickled root veg slaw, maple dijon vinaigrette
-																	</small>
-																</p>
-															</div>
-														</div>
-														<div class="col-md-auto col-12">
-															<h5>
-																<span class="text-ochre">&dollar;12</span>
-															</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 mb-3">
-												<div class="menu__item">
-													<div class="row m-0">
-														<div class="col-md col-12">
-															<div class="">
-																<strong>
-																	Harvest Grain Salad
-																</strong>
-																<p class="m-0">
-																	<small>
-																		quinoa, caramelized carrots, dried cranberries, pepita seeds, fresh herbs, feta, pickled root veg slaw, maple dijon vinaigrette
-																	</small>
-																</p>
-															</div>
-														</div>
-														<div class="col-md-auto col-12">
-															<h5>
-																<span class="text-ochre">&dollar;12</span>
+																<span class="text-ochre">&dollar;30</span>
 															</h5>
 														</div>
 													</div>
@@ -1036,8 +966,8 @@
 						<div class="col-md-6 col-12">
 							<div class="text-center text-white">
 								<div class="page-title mb-5">
-									<h2 class="mb-3" data-aos="fade-up">Soup & Salads</h2>
-									<p data-aos="fade-up" data-aos-delay="300" class="title-heading heading-font m-0">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+									<h2 class="mb-3" data-aos="fade-up">Fish & Chips</h2>
+									<p data-aos="fade-up" data-aos-delay="300" class="title-heading heading-font m-0">served with crispy tempura style batter, house slaw, house tartar</p>
 								</div>
 							</div>
 						</div>
@@ -1052,94 +982,39 @@
 								<div class="card mb-3 mb-md-5">
 									<div class="card-body p-3 p-md-5">
 										<div class="row m-0">
-											<div class="col-md-6 mb-3">
+											<div class="col-md-12 mb-3">
 												<div class="menu__item">
 													<div class="row m-0">
 														<div class="col-md col-12">
 															<div class="">
-																<strong>
-																	Harvest Grain Salad
-																</strong>
-																<p class="m-0">
+																<p class="mb-3">
 																	<small>
 																		quinoa, caramelized carrots, dried cranberries, pepita seeds, fresh herbs, feta, pickled root veg slaw, maple dijon vinaigrette
 																	</small>
 																</p>
+																<table class="table bg-transparent text-white">
+																	<tr>
+																		<th></th>
+																		<th>1 Piece</th>
+																		<th>2 Pieces</th>
+																	</tr>
+																	<tr>
+																		<td><strong>Cod</strong></td>
+																		<td><span class="text-ochre">&dollar;17</span></td>
+																		<td><span class="text-ochre">&dollar;25</span></td>
+																	</tr>
+																	<tr>
+																		<td><strong>Salmon</strong></td>
+																		<td><span class="text-ochre">&dollar;19</span></td>
+																		<td><span class="text-ochre">&dollar;28</span></td>
+																	</tr>
+																	<tr>
+																		<td><strong>Halibut</strong></td>
+																		<td><span class="text-ochre">&dollar;23</span></td>
+																		<td><span class="text-ochre">&dollar;34</span></td>
+																	</tr>
+																</table>
 															</div>
-														</div>
-														<div class="col-md-auto col-12">
-															<h5>
-																<span class="text-ochre">&dollar;12</span>
-															</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 mb-3">
-												<div class="menu__item">
-													<div class="row m-0">
-														<div class="col-md col-12">
-															<div class="">
-																<strong>
-																	Harvest Grain Salad
-																</strong>
-																<p class="m-0">
-																	<small>
-																		quinoa, caramelized carrots, dried cranberries, pepita seeds, fresh herbs, feta, pickled root veg slaw, maple dijon vinaigrette
-																	</small>
-																</p>
-															</div>
-														</div>
-														<div class="col-md-auto col-12">
-															<h5>
-																<span class="text-ochre">&dollar;12</span>
-															</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 mb-3">
-												<div class="menu__item">
-													<div class="row m-0">
-														<div class="col-md col-12">
-															<div class="">
-																<strong>
-																	Harvest Grain Salad
-																</strong>
-																<p class="m-0">
-																	<small>
-																		quinoa, caramelized carrots, dried cranberries, pepita seeds, fresh herbs, feta, pickled root veg slaw, maple dijon vinaigrette
-																	</small>
-																</p>
-															</div>
-														</div>
-														<div class="col-md-auto col-12">
-															<h5>
-																<span class="text-ochre">&dollar;12</span>
-															</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 mb-3">
-												<div class="menu__item">
-													<div class="row m-0">
-														<div class="col-md col-12">
-															<div class="">
-																<strong>
-																	Harvest Grain Salad
-																</strong>
-																<p class="m-0">
-																	<small>
-																		quinoa, caramelized carrots, dried cranberries, pepita seeds, fresh herbs, feta, pickled root veg slaw, maple dijon vinaigrette
-																	</small>
-																</p>
-															</div>
-														</div>
-														<div class="col-md-auto col-12">
-															<h5>
-																<span class="text-ochre">&dollar;12</span>
-															</h5>
 														</div>
 													</div>
 												</div>
@@ -1153,6 +1028,7 @@
 				</div>
 			</section>
 		</article>
+		<!--
 		<article id="menuCategory6">
 			<section class="banner-lg">
 				<div class="banner-content">
@@ -1378,7 +1254,7 @@
 				</div>
 			</section>
 		</article>
--->
+		-->
 	</main>
 	<footer>
 		<?php $this->load->view('components/_common_footer') ?>

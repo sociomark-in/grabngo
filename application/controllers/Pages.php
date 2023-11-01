@@ -35,20 +35,21 @@ class Pages extends CI_Controller
 			case 'drinks':
 				# code...
 				// $this->load->view('pages/drinks-menu');
-				$this->load->view('pages/food-menu');
+				redirect('food-menu');
 				break;
 
 			default:
 				# code...
 				$this->load->view('pages/food-menu');
+				// $this->load->view('pages/food-menu');
 				break;
 		}
 	}
 
 	public function gallery()
 	{
-		$data['gallery']['gallery'] = directory_map(FCPATH. "assets/media/images/gallery");
-		$data['gallery']['thumbnails'] = directory_map(FCPATH. "assets/media/images/gallery/thumbnails");
+		$data['gallery']['gallery'] = directory_map(FCPATH . "assets/media/images/gallery");
+		$data['gallery']['thumbnails'] = directory_map(FCPATH . "assets/media/images/gallery/thumbnails");
 		$this->load->view('pages/gallery', $data);
 	}
 }

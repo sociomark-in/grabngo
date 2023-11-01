@@ -81,9 +81,10 @@ class Dashboard extends CI_Controller
 
 	public function menu_items($cat_id)
 	{
+		
 		if (isset($_SESSION['user'])) {
 			# code...
-			$this->load->model("MenuItemModel", "Menu");
+			$this->load->model("menu/MenuItemModel", "Menu");
 			$data = [
 				'page' => [
 					'title' => "Menu" . " • " . APP_NAME
