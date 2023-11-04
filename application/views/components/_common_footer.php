@@ -24,14 +24,14 @@
 			<div class="col-auto">
 				<ul class="nav">
 					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a class="nav-link" href="https://www.instagram.com/barebonesfishhouse_smokery/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 					</li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link disabled" aria-disabled="true">Disabled</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
