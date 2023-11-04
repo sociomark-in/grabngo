@@ -55,7 +55,7 @@
 			else : ?>
 			<?php endif ?>
 			<article id="menuCategory<?= $i ?>">
-				<section class="banner-lg">
+				<section class="banner-lg menu-title">
 					<div class="banner-content">
 						<div class="row m-0 align-items-end justify-content-center h-100">
 							<div class="col-md-6 col-12">

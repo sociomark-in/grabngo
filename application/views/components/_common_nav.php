@@ -12,9 +12,9 @@
                 <li class="nav-item">
                     <?= put_link("Home", "") ?>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <?= put_link("About", "about-us") ?>
-                </li>
+                </li> -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Menu

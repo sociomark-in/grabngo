@@ -243,11 +243,14 @@ main {
 			width: 100%;
 			display: flex;
 			align-items: center;
+			&.menu-title{
+				min-height: 400px;
+			}
 			&.banner-md-auto{
 				min-height: calc(100vh - 100px);
 			}
 			position: relative;
-			background: url("../media/images/backgrounds/1.jpg") no-repeat;
+			background: url("../media/images/backgrounds/restro.webp") no-repeat;
 			background-size: cover;
 			background-position: center;
 			&::before {
