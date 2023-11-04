@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'http://localhost:8000/barebonesfishhouse/';
-// $config['base_url'] = 'https://barebonesfishhouse.ca/';
+$config['base_url'] = 'https://barebonesfishhouse.ca/';
 
 /*
 |--------------------------------------------------------------------------
