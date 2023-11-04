@@ -24,7 +24,7 @@ $colors: (
 	"primary": $color-ochre,
 	"foggy": $color-violet-gray,
 	"ochre": $color-ochre,
-	'transparent': transparent
+	"transparent": transparent,
 );
 
 /* RESET BOOTSTRAP */
@@ -156,9 +156,9 @@ nav.navbar {
 		}
 	}
 }
-.table{
-	&.bg-transparent{
-		*{
+.table {
+	&.bg-transparent {
+		* {
 			background-color: transparent !important;
 		}
 	}
@@ -241,9 +241,15 @@ main {
 		padding: calc(max(5vh, 5%)) 0;
 		&.banner-lg {
 			width: 100%;
-			height: calc(max(40vh, 300px));
+			display: flex;
+			align-items: center;
+			&.banner-md-auto{
+				min-height: calc(100vh - 100px);
+			}
 			position: relative;
-			background: url("../media/images/backgrounds/1.jpg");
+			background: url("../media/images/backgrounds/1.jpg") no-repeat;
+			background-size: cover;
+			background-position: center;
 			&::before {
 				position: absolute;
 				top: 0;
@@ -255,6 +261,7 @@ main {
 			}
 			.banner-content {
 				height: 100%;
+				width: 100%;
 				position: relative;
 				z-index: 1;
 			}
@@ -287,6 +294,13 @@ main {
 		font-size: calc(max(1vw, 16px));
 	}
 	main {
+		section {
+			padding: calc(max(5vh, 5%)) 0;
+			&.banner-lg {
+				min-height: calc(max(60vh, 500px));
+			}
+		}
+
 		.dual-img {
 			.tile {
 				width: 100%;

@@ -11,7 +11,7 @@
 		<?php $this->load->view('components/_common_nav') ?>
 	</header>
 	<main>
-		<section class="banner-lg">
+		<section class="banner-lg banner-md-auto">
 			<div class="banner-content">
 				<div class="row m-0 align-items-center justify-content-center h-100">
 					<div class="col-md-6 col-12">

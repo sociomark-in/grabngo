@@ -19,9 +19,19 @@ class Pages extends CI_Controller
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('MenuMasterModel', 'MenuMaster');
+	}
 	public function index()
 	{
 		$this->load->view('pages/index');
+	}
+
+	public function about()
+	{
+		$this->load->view('pages/about');
 	}
 
 	public function contact()
@@ -34,13 +44,13 @@ class Pages extends CI_Controller
 		switch ($cat) {
 			case 'drinks':
 				# code...
-				// $this->load->view('pages/drinks-menu');
 				redirect('food-menu');
 				break;
 
 			default:
 				# code...
-				$this->load->view('pages/food-menu');
+				$data['page']['menu'] = json_decode($this->MenuMaster->get_master_menu(), true);
+				$this->load->view('pages/drinks-menu', $data);
 				// $this->load->view('pages/food-menu');
 				break;
 		}

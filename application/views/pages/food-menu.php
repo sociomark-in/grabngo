@@ -11,7 +11,7 @@
 		<?php $this->load->view('components/_common_nav') ?>
 	</header>
 	<main>
-		<section class="banner-lg">
+		<section class="banner-lg banner-md-auto">
 			<div class="banner-content">
 				<div class="row m-0 align-items-center justify-content-center h-100">
 					<div class="col-md-6 col-12">
@@ -40,7 +40,7 @@
 								Discover Our Food Menu
 							</h2>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure explicabo veritatis perspiciatis iste exercitationem expedita ducimus corporis voluptate reprehenderit ratione, animi aspernatur quas quia ipsa enim? Assumenda quia est ad.
+								Fresh. Seasonal and globally inspired cuisine. from our 100% gluten free kitchen A contemporary restaurant offering an innovative seafood and in house smoked meat driven menu.
 							</p>
 						</div>
 					</div>
