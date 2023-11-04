@@ -8,7 +8,11 @@ class FormEnquiryModel extends CI_Model
 	}
 
 	public function insert($data){
-		$this->db->insert("",$data);
+		if($this->db->insert("contact",$data)){
+			return true;
+		} else{
+			return false;
+		}
 	}
 
 	public function get(){

@@ -17,7 +17,7 @@
 					<div class="col-md-6 col-12">
 						<div class="text-center text-white">
 							<div class="page-title mb-5">
-								<p class="title-heading heading-font m-0">Lorem ipsum dolor sit.</p>
+								<p class="title-heading heading-font m-0 d-none">Lorem ipsum dolor sit.</p>
 								<h2 class="mb-3" data-aos="fade-up">Contact Us</h2>
 								<p data-aos="fade-up" data-aos-delay="300">
 									Connect with us today, we're here to help!
@@ -73,37 +73,37 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<form action="" method="post">
+						<?= form_open('api/contact/get') ?>
 							<div class="row m-0">
 								<div class="col-lg-6 col-12">
 									<div class="mb-3">
 										<label for="" class="form-label">Your Name</label>
-										<input type="text" name="" id="" class="form-control">
+										<input type="text" name="name" id="" class="form-control">
 									</div>
 								</div>
 								<div class="col-lg-6 col-12">
 									<div class="mb-3">
 										<label for="" class="form-label">Your Phone</label>
-										<input type="text" name="" id="" class="form-control">
+										<input type="text" name="phone" id="" class="form-control">
 									</div>
 								</div>
 								<div class="col-12">
 									<div class="mb-3">
 										<label for="" class="form-label">Your Email Address</label>
-										<input type="text" name="" id="" class="form-control">
+										<input type="text" name="email" id="" class="form-control">
 									</div>
 								</div>
 								<div class="col-12">
 									<div class="mb-3">
 										<label for="" class="form-label">Your Message</label>
-										<textarea name="" id="" class="form-control" rows="7"></textarea>
+										<textarea name="message" id="" class="form-control" rows="7"></textarea>
 									</div>
 								</div>
 								<div class="col-md-6 col-12">
 									<button type="submit" class="btn btn-primary btn_icon-left"><i class="fa-solid fa-envelope icon"></i>Submit</button>
 								</div>
 							</div>
-						</form>
+						<?= form_close() ?>
 					</div>
 				</div>
 			</div>

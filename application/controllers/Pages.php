@@ -42,6 +42,9 @@ class Pages extends CI_Controller
 	public function menu($cat)
 	{
 		switch ($cat) {
+			case 'pdf':
+				redirect(base_url('assets/uploads/'). 'menu_2023.pdf');
+				break;
 			case 'drinks':
 				# code...
 				redirect('food-menu');

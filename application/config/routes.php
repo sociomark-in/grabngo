@@ -53,7 +53,11 @@ $route['default_controller'] = 'Pages';
 $route['about-us'] = 'Pages/about';
 $route['gallery'] = 'Pages/gallery';
 $route['food-menu'] = 'Pages/menu/food';
+$route['food-menu-pdf'] = 'Pages/menu/pdf';
 $route['drinks-menu'] = 'Pages/menu/drinks';
 $route['contact-us'] = 'Pages/contact';
+
+$route['api/contact/get']['POST'] = 'DataController/get_data';
+
 $route['404_override'] = 'ErrorController/error_404';
 $route['translate_uri_dashes'] = FALSE;

@@ -17,7 +17,7 @@
 					<div class="col-md-6 col-12">
 						<div class="text-center text-white">
 							<div class="page-title mb-5">
-								<p class="title-heading heading-font m-0">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+								<p class="title-heading heading-font m-0 d-none">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 								<h2 class="mb-3" data-aos="fade-up">Discover Our Menu</h2>
 								<p data-aos="fade-up" data-aos-delay="300">
 									Connect with us today, we're here to help!
@@ -33,7 +33,7 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-9 col-md-10 col-11">
 						<div class="section-title text-center mb-3 mb-md-5">
-							<p data-aos="fade-up" class="m-0 heading-font title-heading">
+							<p data-aos="fade-up" class="m-0 heading-font title-heading d-none">
 								Lorem ipsum dolor, sit amet, nesciunt?
 							</p>
 							<h2 data-aos="fade-up" data-aos-delay="300">

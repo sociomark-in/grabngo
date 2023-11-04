@@ -17,7 +17,7 @@
 					<div class="col-md-6 col-12">
 						<div class="text-center text-white">
 							<div class="page-title mb-5">
-								<p class="title-heading heading-font m-0">Lorem ipsum dolor sit.</p>
+								<p class="title-heading heading-font m-0 d-none">Lorem ipsum dolor sit.</p>
 								<h2 class="mb-3" data-aos="fade-up">Gallery</h2>
 								<p data-aos="fade-up" data-aos-delay="300">
 									Connect with us today, we're here to help!
