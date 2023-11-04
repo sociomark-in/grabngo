@@ -36,14 +36,39 @@ class Pages extends CI_Controller
 
 	public function contact()
 	{
-		$this->load->view('pages/contact');
+		$this->load->helper('captcha');
+
+		$vals = array(
+			'img_path'      => './captcha/',
+			'img_url'       => base_url('captcha/'),
+			'font_path'     => './assets/fonts/JMH Typewriter.ttf',
+			'img_width'     => 150,
+			'img_height'    => 40,
+			'expiration'    => 7200,
+			'word_length'   => 5,
+			'font_size'     => 18,
+			'img_id'        => 'Imageid',
+			'pool'          => '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+
+			// White background and border, black text and red grid
+			'colors'        => array(
+				'background' => array(255, 255, 255),
+				'border' => array(255, 255, 255),
+				'text' => array(0, 0, 0),
+				'grid' => array(255, 40, 40)
+			)
+		);
+
+		$data['captcha'] = create_captcha($vals);
+		$this->session->set_flashdata('captcha_text', $data['captcha']['word']);
+		$this->load->view('pages/contact', $data);
 	}
 
 	public function menu($cat)
 	{
 		switch ($cat) {
 			case 'pdf':
-				redirect(base_url('assets/uploads/'). 'menu_2023.pdf');
+				redirect(base_url('assets/uploads/') . 'menu_2023.pdf');
 				break;
 			case 'drinks':
 				# code...

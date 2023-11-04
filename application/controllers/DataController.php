@@ -15,11 +15,19 @@ class DataController extends CI_Controller
 			'email' => $this->input->post('email'),
 			'message' => $this->input->post('message'),
 		];
-		if($this->FormEnquiry->insert($data)){
-			$this->session->set_flashdata('contact_form_submit_status', 'success');
-			redirect($this->agent->referrer());
+		if($this->input->post('captcha_text') == $this->session->captcha_text){
+			if($this->FormEnquiry->insert($data)){
+				$this->session->set_flashdata('contact_form_submit_status', 'success');
+				redirect($this->agent->referrer());
+			} else{
+				$this->session->set_flashdata('contact_form_submit_status', 'fail');
+			}
 		} else{
-			$this->session->set_flashdata('contact_form_submit_status', 'fail');
+			echo "<pre>";
+			print_r(json_encode(array(
+				'error' => "Captcha Mismatch Error"
+			)));
+			echo "</pre>";
 		}
 	}
 }

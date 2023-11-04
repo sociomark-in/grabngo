@@ -74,35 +74,48 @@
 					</div>
 					<div class="col-md-6">
 						<?= form_open('api/contact/get') ?>
-							<div class="row m-0">
-								<div class="col-lg-6 col-12">
-									<div class="mb-3">
-										<label for="" class="form-label">Your Name</label>
-										<input type="text" name="name" id="" class="form-control">
-									</div>
-								</div>
-								<div class="col-lg-6 col-12">
-									<div class="mb-3">
-										<label for="" class="form-label">Your Phone</label>
-										<input type="text" name="phone" id="" class="form-control">
-									</div>
-								</div>
-								<div class="col-12">
-									<div class="mb-3">
-										<label for="" class="form-label">Your Email Address</label>
-										<input type="text" name="email" id="" class="form-control">
-									</div>
-								</div>
-								<div class="col-12">
-									<div class="mb-3">
-										<label for="" class="form-label">Your Message</label>
-										<textarea name="message" id="" class="form-control" rows="7"></textarea>
-									</div>
-								</div>
-								<div class="col-md-6 col-12">
-									<button type="submit" class="btn btn-primary btn_icon-left"><i class="fa-solid fa-envelope icon"></i>Submit</button>
+						<div class="row m-0">
+							<div class="col-lg-6 col-12">
+								<div class="mb-3">
+									<label for="" class="form-label">Your Name</label>
+									<input type="text" name="name" id="" class="form-control" required>
 								</div>
 							</div>
+							<div class="col-lg-6 col-12">
+								<div class="mb-3">
+									<label for="" class="form-label">Your Phone</label>
+									<input type="text" name="phone" id="" class="form-control" maxlength="10" required>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="mb-3">
+									<label for="" class="form-label">Your Email Address</label>
+									<input type="email" name="email" id="" class="form-control" required>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="mb-3">
+									<label for="" class="form-label">Your Message</label>
+									<textarea name="message" id="" class="form-control" rows="7"></textarea>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="mb-3">
+									<label for="" class="form-label">Re-write the Captcha</label>
+									<div class="row m-0 g-0 gap-3">
+										<div class="col-md-auto col-12 mb-3">
+											<?= $captcha['image'] ?>
+										</div>
+										<div class="col-md col-12">
+											<input type="text" name="captcha_text" id="" class="form-control" required>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<button type="submit" class="btn btn-primary btn_icon-left"><i class="fa-solid fa-envelope icon"></i>Submit</button>
+							</div>
+						</div>
 						<?= form_close() ?>
 					</div>
 				</div>
